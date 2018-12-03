@@ -44,14 +44,8 @@ public abstract class DrsFriend {
 	public void setFriendOrFoe(boolean isFriendOrFoe) {
 		this.isFriendOrFoe = isFriendOrFoe;
 	} 
-	/**
-	 * create constructor to set DrsFriend
-	 * @param set attribute value of Friend name
-	 */
-	public DrsFriend(String name) {
-		this.friendName= name; 
+	
 
-	}
 	/**
 	 * create method getNames set Sting to null and implement a while loop with a try catch 
 	 * @return name value 

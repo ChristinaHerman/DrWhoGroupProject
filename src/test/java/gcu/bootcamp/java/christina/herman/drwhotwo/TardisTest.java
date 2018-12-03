@@ -10,7 +10,7 @@ public class TardisTest {
 	int exectedResult;
 	int actualRsult;
 	
-	Tardis tardis = new Tardis("Tardis");
+	Tardis tardis = new Tardis();
 	
 	@Test
 	public void testFindTheYear() {

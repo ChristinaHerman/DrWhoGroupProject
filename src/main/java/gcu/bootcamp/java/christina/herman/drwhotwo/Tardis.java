@@ -19,13 +19,7 @@ public class Tardis extends DrsFriend {
 	private int whatYear; 
 	private int DrWho; 
 	
-	/**
-	 * create constructor for class pass in String name 
-	 * @param calling class being extended 
-	 */
-	public Tardis(String name) {
-		super(name);
-	}
+	
 	/**
 	 * create method to get attribute What year
 	 * @return value of what year 
@@ -40,6 +34,7 @@ public class Tardis extends DrsFriend {
 	public void setWhatYear(int whatYear) {
 		this.whatYear = whatYear;
 	}
+
 	/**
 	 * create method to get attribute DrWho
 	 * @return DrWho value 
@@ -233,12 +228,11 @@ public class Tardis extends DrsFriend {
 	   * call methods and run program
 	   */
 	public static void main(String [] args) {
-		Tardis friend = new Tardis("T");
+		Tardis friend = new Tardis();
 		friend.createListOfFriends();
 		Collections.sort(friend.realFriends);
-		friend.promptUserFourTimes();
-		int num = friend.getNumberFromUser();
-		friend.findTheYear(num);
+		friend.promptUserFourTimes(); 
+		friend.findTheYear(friend.getNumberFromUser());
 		friend.displayFriends();
 		friend.displayEnemies();
 		
